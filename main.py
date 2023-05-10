@@ -1,9 +1,3 @@
-# lista_config = (
-#     "jugadas",
-#     "victorias",
-#     "dibujos"
-# )
-
 import random
 from config import reglas
 
@@ -61,7 +55,6 @@ def decidirGanador(jugada0, jugada1):
 
     return False
 
-
 def mostrarEmpate(jugada):
     print(f"Habeis emptadao, los dos habéis elegido: {jugadas[jugada]}")
     imprimir(dibujos[jugada])
@@ -90,7 +83,6 @@ def juego(vsCpu):
         mostrarVictoria(msg, jugada0, jugada1)
 
     return ganador
-
 
 def main():
     print("Elige, <=0 jugar una partida, >0 partidas automaticas")
