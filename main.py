@@ -5,11 +5,13 @@
 # )
 
 import random
-from config_pptls import lista_config
+from config import reglas
 
-jugadas = lista_config[0]
-victorias = lista_config[1]
-dibujos = lista_config[2]
+tipo_juego = 1
+
+jugadas = reglas[tipo_juego][0]
+victorias = reglas[tipo_juego][1]
+dibujos = reglas[tipo_juego][2]
 
 # devuelve una de las jugadas
 def pideUnNum():
